@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.logo-img{
+    height: 100px;
+    width: auto;
+}
+.bookingdtl {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 90px auto;
+}
+.col-lg-12.text-center.email-label label {
+    margin: 0px 0px 22px 0px;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #4e4e4e;
+}
+.common-btn {
+    margin: 22px 22px;
+}
+.common-btn{
+    color: #fff!important;;
+    min-width: 150px;
+    background-color: #6d6d6d !important;
+    border: none;
+    padding: 10px;
+    display: inline-block;
+}
+.common-btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+.common-btn:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.bookingdtl input:focus{
+    box-shadow: none;
+    outline: none;
+}
+.common-btn {
+    width: auto;
+    background-color: #6d6d6d !important;
+    border: none;
+    webkit-transition: all 1.3s;
+    -moz-transition: all 1.3s;
+    -o-transition: all 1.3s;
+    transition: all 1.3s;
+}
+.button.btn.btn-primary.btn-set:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.bkngbtn{
+    width: auto;
+    background-color: #6d6d6d !important;
+    border: none;
+}
+.frmset{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.dnone {
+    display: none;
+}
+.dinblk {
+    display: inline-flex;
+}
+.sbmtbtnst{
+    display: b-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+a#dropdownMenuLink {
+    border: 1px solid #ced4da;
+    width: 100%;
+    text-align: left;
+}
+.dropdown-toggle.btn-set:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.ysbtn{
+    min-width: 80px;
+}
+.nobtn{
+    min-width: 80px;
+}
+.btn.btn-set:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+button.btn.common-btn.btn-set.sbmtbtn.pd-10 {
+    margin: 0 auto;
+    display: inline-block;
+    width: 150px;
+}
+.dis-none{
+    display: none !important;
+}
+button.btn.common-btn.pd-10 {
+    max-width: 200px;
+    display: inline-block;
+    margin:  0 auto;
+}

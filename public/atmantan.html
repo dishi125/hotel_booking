@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>atmantan</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<!--header-section start -->
+	<header class="header-section">
+		<div class="container-fluid">
+			<div class="logo">
+				<img src="image/atmantan.png" alt="sell" class="logo-img">
+			</div>
+		</div>
+	</header>
+	<!--header-section end -->
+
+	<!--booking-section start -->
+	<section class="booking-section">
+		<div class="container">
+			<div class="bookingdtl">
+				<div class="row">
+					<div class="col-lg-12 text-center email-label">
+						<label for="inputcowname" class="form-label">Enter phone no/email id
+						</label>
+					</div>
+					<div class="col-lg-2 mb-3 ">
+											<div class="dropdown ">
+												<a class="btn  dropdown-toggle btn-set" href="#" role="button"
+													id="dropdownMenuLink" data-bs-toggle="dropdown"
+													aria-expanded="false">
+													Room</a>
+												<ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+													<li><a class="dropdown-item" href="#">A/A Balcony</a></li>
+													<li><a class="dropdown-item" href="#">A/A Balcony</a></li>
+													<li><a class="dropdown-item" href="#">Mango Tree Villa</a></li>
+												</ul>
+											</div>
+										</div>
+					<div class="col-lg-10 mb-3">
+						<input type="text" id="txtphone" class="form-control email-txtbx">
+					</div>
+					<div class="col-lg-12" style="text-align:center;margin-bottom:15px;" >
+						or
+					</div>
+					<div class="col-lg-12">
+						<input type="text" id="txtemail" class="form-control email-txtbx">
+					</div>
+					<!-- Button trigger modal -->
+					<div class="col-lg-12 d-flex  justify-content-center btnbthset" style="align-items: center;">
+						<button type="button" class="btn btn-set common-btn" data-bs-toggle="modal" onclick="return funCheckValidate();" data-bs-target="#exampleModal"
+							id="#exampleModal">
+							Click Validate</button>
+						<!-- </div> -->
+						<!-- Modalpopup -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close">
+										</button>
+									</div>
+									<div class="modal-body">
+										<p>“Namaste, unfortunately, we can’t find you on our database.
+											If this is an error from our side, then kindly recheck the email id and
+											phone no
+											that
+											you have entered or alternatively send us an email at
+											reservations@atmantan.com”
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Modalpopup -->
+						<!-- <div class="col-lg-3"> -->
+						<button class="btn bkngbtn  common-btn" type="button" data-bs-toggle="modal"
+							data-bs-target="#myModal" aria-expanded="false" aria-controls="collapseExample">
+							Booking</button>
+					</div>
+					<!-- The Modal -->
+					<div class="modal" id="myModal">
+						<div class="modal-dialog modal-xl modal-dialog-centered">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Booking</h4>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+								</div>
+								<!-- Modal body -->
+								<div class="modal-body">
+									<!-- click and show booking  -->
+									<div class="row frmset dnone">
+										<div class="col-lg-2 mb-3">
+											<input type="text" id="inputttl" placeholder="Mr/Ms" class="form-control">
+										</div>
+										<div class="col-lg-5 mb-3">
+											<input type="text" id="inputfirstname" placeholder="firstame"
+												class="form-control">
+										</div>
+										<div class="col-lg-5 mb-3">
+											<input type="text" id="inputsurname" placeholder="surname"
+												class="form-control">
+										</div>
+										<div class="col-lg-2 mb-3 ">
+											<div class="dropdown ">
+												<a class="btn  dropdown-toggle btn-set" href="#" role="button"
+													id="dropdownMenuLink" data-bs-toggle="dropdown"
+													aria-expanded="false">
+													Room</a>
+												<ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+													<li><a class="dropdown-item" href="#">A/A Balcony</a></li>
+													<li><a class="dropdown-item" href="#">A/A Balcony</a></li>
+													<li><a class="dropdown-item" href="#">Mango Tree Villa</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-lg-5 mb-10">
+											<input type="number" id="inputsurame" placeholder="Enter number of night"
+												class="form-control" min="0">
+										</div>
+										<div class="col-lg-12 mb-3">
+											<p>Do you have family members or friends whom you would like to refer?</p>
+											<button class="btn common-btn ysbtn " type="button"
+												data-bs-toggle="collapse" data-bs-target="#demo" aria-expanded="false"
+												aria-controls="collapseExample">
+												Yes</button>
+											<button class="btn common-btn nobtn pd-10" type="button">No</button>
+										</div>
+										<div class="container mt-3">
+											<!-- <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Simple collapsible</button> -->
+											<div id="demo" class="collapse">
+												<div class="row frmset dnone" id="hide">
+													<div class="col-lg-2 mb-3">
+														<input type="text" id="inputttl" placeholder="Mr/Ms"
+															class="form-control">
+													</div>
+													<div class="col-lg-5 mb-3">
+														<input type="text" id="inputfirstname" placeholder="firstame"
+															class="form-control">
+													</div>
+													<div class="col-lg-5 mb-3">
+														<input type="text" id="inputsurname" placeholder="surname"
+															class="form-control">
+													</div>
+													<div class="col-lg-5 mb-3">
+														<input type="number" id="inputphonenumber"
+															placeholder="phonenumber" class="form-control">
+													</div>
+													<div class="col-lg-5 mb-3">
+														<input type="text" id="inputemailid" placeholder="Email ID"
+															class="form-control">
+													</div>
+													<button class="btn common-btn  pd-10" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#reference-box-inr">Refer one more</button>
+													<div id="reference-box-inr" class="collapse">
+														<div class="row frmset dnone">
+															<div class="col-lg-2 mb-3">
+																<input type="text" id="inputttl" placeholder="Mr/Ms"
+																	class="form-control">
+															</div>
+															<div class="col-lg-5 mb-3">
+																<input type="text" id="inputfirstname"
+																	placeholder="firstame" class="form-control">
+															</div>
+															<div class="col-lg-5 mb-3">
+																<input type="text" id="inputsurname"
+																	placeholder="surname" class="form-control">
+															</div>
+															<div class="col-lg-5 mb-3">
+																<input type="number" id="inputphonenumber"
+																	placeholder="phonenumber" class="form-control">
+															</div>
+															<div class="col-lg-5 mb-3">
+																<input type="text" id="inputemailid"
+																	placeholder="Email ID" class="form-control">
+															</div>
+															<div class="sbmtbtnst">
+																<button class="btn common-btn btn-set  pd-10"
+																type="submit">SUBMIT</button>
+															</div>
+														</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sbmtbtnst">
+												<button id="show" class="btn common-btn btn-set sbmtbtn pd-10"
+												type="submit">SUBMIT</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+	</section>
+	<!--booking-section end -->
+	<script src="js/bootstrap.bundle.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/module.js"></script>
+</body>
+</html>
